@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الرعاة</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background: linear-gradient(135deg, #1e3a8a, #0ea5e9);
+            margin: 0;
+            padding: 20px;
+            color: white;
+            text-align: right;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .card {
+            background: white;
+            color: #1e3a8a;
+            border-radius: 16px;
+            padding: 30px;
+            margin: 20px 0;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .btn {
+            display: inline-block;
+            background: #1e3a8a;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px 5px;
+            transition: transform 0.2s;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 8px;
+            border: none;
+            font-family: 'Tajawal', sans-serif;
+        }
+        label {
+            font-weight: bold;
+            margin-top: 15px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>تسجيل الرعاة</h1>
+            <p>ثانوية عبدالله الثقفي - التربية الرياضية</p>
+        </div>
+
+        <div class="card">
+            <h2>نموذج تسجيل الراعي</h2>
+            <form>
+                <label>اسم الشركة أو الراعي:</label>
+                <input type="text" name="sponsor_name">
+                <label>اسم الممثل:</label>
+                <input type="text" name="representative_name">
+                <label>رقم التواصل:</label>
+                <input type="text" name="contact_number">
+                <label>نوع الرعاية:</label>
+                <textarea name="sponsorship_type"></textarea>
+                <br><br>
+                <button class="btn" type="submit">إرسال التسجيل</button>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>

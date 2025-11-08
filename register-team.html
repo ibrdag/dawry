@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الفرق</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background: linear-gradient(135deg, #1e3a8a, #0ea5e9);
+            margin: 0;
+            padding: 20px;
+            color: white;
+            text-align: right;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .card {
+            background: white;
+            color: #1e3a8a;
+            border-radius: 16px;
+            padding: 30px;
+            margin: 20px 0;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .btn {
+            display: inline-block;
+            background: #1e3a8a;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px 5px;
+            transition: transform 0.2s;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 8px;
+            border: none;
+            font-family: 'Tajawal', sans-serif;
+        }
+        label {
+            font-weight: bold;
+            margin-top: 15px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>تسجيل الفرق</h1>
+            <p>ثانوية عبدالله الثقفي - التربية الرياضية</p>
+        </div>
+
+        <div class="card">
+            <h2>نموذج تسجيل الفريق</h2>
+            <form>
+                <label>اسم الفريق:</label>
+                <input type="text" name="team_name">
+                <label>اسم القائد:</label>
+                <input type="text" name="captain_name">
+                <label>عدد اللاعبين:</label>
+                <input type="number" name="player_count">
+                <label>ملاحظات إضافية:</label>
+                <textarea name="notes"></textarea>
+                <br><br>
+                <button class="btn" type="submit">إرسال التسجيل</button>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
